@@ -1,7 +1,10 @@
 package api;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Step;
+import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
 import org.junit.Before;
@@ -10,7 +13,6 @@ import org.junit.Test;
 import static io.restassured.RestAssured.given;
 
 public class Mesto1Test {
-
   String bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmI3NzVhZmQ1NmMxNDAwM2Q0Nzk1ZTYiLCJpYXQiOjE3MzE4NTkyNzgsImV4cCI6MTczMjQ2NDA3OH0.EzXqgw0vZ3qqSepFWRjah0zeg4MW6mGtNmbJdB1sPU4";
 
   @Before
@@ -19,6 +21,9 @@ public class Mesto1Test {
   }
 
   @Test
+  @Epic("Название эпика")
+  @Feature("Название фичи")
+  @Story("Название истории")
   @DisplayName("Add a new photo")
   @Description("This test is for adding a new photo to Mesto.")
   public void addNewPhoto() {
